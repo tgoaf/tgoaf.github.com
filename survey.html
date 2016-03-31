@@ -1,0 +1,150 @@
+<html>
+	<head>
+		<title>설문조사</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<!-- 아래코드는 화면크기 고정 및 설정하는 META태그 //-->
+		<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+		<style>
+			body {
+				-webkit-text-size-adjust: 100%;
+				-moz-text-size-adjust: 100%;
+				-ms-text-size-adjust: 100%;
+			}
+			#cont {font-size:10pt; text-align:justify; text-indent:5pt;line-height:120%; margin:1pt;}
+			#cont2 {font-size:10pt; text-align:justify; text-indent:-16px;line-height:120%; margin-left:15pt;}
+			#sub_title {font-size:12pt;}
+			#m_title {font-size:20pt;margin-left:10pt;}
+			.m_win {background-color:#A5A588;}
+		</style>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>  //-->
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script language="javascript">
+			function onSubmit() {
+				$.ajax({
+url: "https://script.google.com/macros/s/AKfycbx7OiqfiBG9ArHIDeh5nfMcGJkbfaeQ2DHT3dx-QwLkxLFppVkM/exec",
+data: {"const":"a", "return":"b", "return_email":"c"},
+type: "POST"
+});
+}
+		    function tTdWidth() {
+		        var cid1 = document.getElementById('td1');
+		        var cid2 = document.getElementById('td2');
+		        if(window.innerWidth > window.innerHeight) {
+		            cid1.width = '30%';
+				    cid2.width = '40%';
+		        }
+		        else {
+					cid1.width = '5%';
+					cid2.width = '90%';
+				}
+		    }
+		    
+		    function moveDIV(mode) {
+		        var tmp_div = document.getElementById("pre_div");
+		        switch (mode) {
+		            case 1 :
+		                tmp_div.innerHTML = document.getElementById('consent').innerHTML;
+		                break;
+		            case 2 :
+		                tmp_div.innerHTML = document.getElementById('psi').innerHTML;
+		                break;
+		            default : break;
+		        }
+				scrollTo(0,1);
+		    }
+		    
+		    function make_disable(id) {
+		        document.getElementById(id).disabled = true;
+		    }
+		    function make_able(id) {
+		        document.getElementById(id).disabled = false;
+		    }
+		</script>
+	</head>
+	
+    <body topmargin="0" bottommargin="0" rightmargin="0" leftmargin="0">
+    <table id=main_tb border="0" align="center" valign="top" width="100%" height="100%" cellpadding="0" cellspacing="0">
+        <tr>
+            <td id="td1" height="60">&nbsp;</td>
+            <td id="td2"><div id="m_title">설문지</div></td>
+            <td id="td1">&nbsp;</td>
+            <script> tTdWidth();</script>
+        </tr>
+        <tr>
+            <td></td>
+            <td height="1" bgcolor="#333333"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td align="center" valign="top">
+                <div id="pre_div">
+                    <table border="0" align="center" valign="top" width="100%" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td width="100%" id="td2" valign="top">
+                                <div id="cont"><p>안녕하십니까?</p>
+                                <p>바쁘신 중에도 귀한 시간을 내어 주셔서 감사합니다. 출산을 진심으로 축하드리며 어머니와 아기의 건강을 기원합니다.</p>
+                                <p>본 설문지는 어머니께서 출산 후 양육을 하며 정서적으로 느끼는 어려움을 이해하고, 대처방안 마련에 대한 연구를 위해 작성 된 것입니다.</p>
+                                <p>저 또한 두 아이의 엄마로서 설문에 참여하시는 일이 바쁘고 힘든 상황에서 얼마나 부담스러우실지 짐작합니다만 간절히 부탁드립니다. 어머니의 참여가 초보연구자인 저에게 많은 격려와 도움이 될 것입니다.</p>
+                                <p>정성껏 작성해 주신 설문지는 연구에 귀중한 자료로 사용됩니다. 모든 응답내용은 비공개로 유지되고 학문적인 연구의 목적 외에 어떤 목적으로도 사용되지 않음을 약속드립니다.</p>
+                                <p>각 질문에는 옳고 그른 답이 없으며, 평소 느끼고 생각한대로 알려주시면 됩니다. 한 문항도 빠짐없이 성심 성의껏 응답해 주시면 연구에 많은 도움이 될 것입니다.</p>
+                                <p>본 연구에 도움을 주셔서 다시 한 번 감사드립니다.</p>
+                                <p align="center"><font size="3"><b>2016년 3월</b></font></p>
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                                <img src="https://www.googledrive.com/host/0BwX0yUuSLPO6R0JWbUNRV1R2WjQ" width="200" align="right" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td  height="30" align="center"></td>
+                        </tr>
+                        <tr>
+                            <td  height="30" align="center"><input class="btn" type="button" size="100" value="다 음" onclick="moveDIV(1)"></td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td height="10" colspan="3"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td height="1" bgcolor="#333333"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td height="30" colspan="3"></td>
+        </tr>
+    </table>
+    </body>
+</html>
+<div id="consent" style="position:absolute;left:0px; top:0px; visibility:hidden;">
+<table id="main_tb" border="0" align="center" valign="top" width="100%" height="100%" cellpadding="0" cellspacing="0">
+    <tr>
+        <td width="100%" height="30"  align="center"><div id="sub_title"><b>연구참여 동의서</b></div></td>
+    </tr>
+    <tr>
+        <td width="100%" valign="top">
+            <div id="cont2">
+            <p>☆ 본 연구의 참여는 의무적인 것이 아닙니다. 시작 후 어느 시점이라도 거절할 수 있습니다.</p>
+            <p>☆ 본 조사는 익명으로 진행되며 철저히 비밀보장이 되고, 본 연구의 자료용도 이외에는 어떤 목적으로도 사용되지 않습니다.</p>
+            <p>☆ 본 동의서에 나온 내용을 이해하셨고, 이 연구에 참여할 것을 동의 하신다면 아래의 (동의합니다.)에 V표시를 해주시고 설문을 진행해 주시기를 바랍니다..</p>
+            <p align="center" valign="middle"><font color="#1111FF"><b>동의합니다.&nbsp;<input type="checkbox" name="cons"></b></font></p>
+            <p>☆ 응답결과 회신을 원하시는 분은 아래의 (결과 회신에 동의합니다.)에 체크를 해주시고 메일주소를 기재해 주시기를 바랍니다. </p>
+            <p>☆ 기입하신 메일주소는 응답하신 내용에 대한 결과 회신을 원하시는 분들에 한해서만 사용 될 것이며, 이 또한 위 내용과 동일하게 처리됩니다.</p>
+            <p align="center" valign="middle"><b>결과 회신에 동의하십니까?&nbsp;&nbsp;예&nbsp;<input type="radio" name="return" value="yes" onclick="make_able('return_email');make_able('start')">&nbsp;&nbsp;아니요&nbsp;<input type="radio" name="return" value="no" onclick="make_disable('return_email');make_able('start')"></b></p>
+            <p align="center" valign="middle"><b>이메일주소&nbsp;:&nbsp;<input type="text" size="20" name="return_email" id="return_email" style="padding:3px;" disabled></b></p>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td  height="30" align="center"><input class="btn" type="button" size="100" id="start" value="시작합니다" onclick="onSubmit();" disabled></td>
+    </tr>
+</table>
+</div>
+
+<div id="psi" style="position:absolute;left:0px; top:0px; visibility:hidden;">aaa</div>
