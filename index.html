@@ -29,13 +29,16 @@ type: "POST"
 		    function tTdWidth() {
 		        var cid1 = document.getElementById('td1');
 		        var cid2 = document.getElementById('td2');
+		        var imgid = document.getElementById('sign');
 		        if(window.innerWidth > window.innerHeight) {
-		            cid1.width = '30%';
-				    cid2.width = '40%';
+		        	cid1.width = '30%';
+		        	cid2.width = '40%';
+		        	imgid.width = '100%';
 		        }
 		        else {
-					cid1.width = '5%';
-					cid2.width = '90%';
+				cid1.width = '5%';
+				cid2.width = '90%';
+				imgid.width = '200';
 				}
 		    }
 		    
@@ -93,7 +96,7 @@ type: "POST"
                                 <p></p>
                                 <p></p>
                                 <p></p>
-                                <img src="signature.png" width="200" align="right" />
+                                <img src="signature.png" id="sign" align="right" />
                                 </div>
                             </td>
                         </tr>
@@ -142,7 +145,7 @@ type: "POST"
         </td>
     </tr>
     <tr>
-        <td  height="30" align="center"><input class="btn" type="button" size="100" id="start" value="시작합니다" onclick="onSubmit();" disabled></td>
+        <td  height="30" align="center"><input class="btn" type="button" size="100" id="start" value="시작합니다" onclick="onSubmit();moveDIV(2)" disabled></td>
     </tr>
 </table>
 </div>
