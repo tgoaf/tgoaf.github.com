@@ -8,9 +8,3 @@
 #td1 {width:30%;}
 #td2 {width:40%;}
 
-#signimg {width:
-<script>
-document.write(window.innerWidth);
-</script>
-;}
-
