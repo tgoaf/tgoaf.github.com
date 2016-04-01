@@ -4,76 +4,64 @@
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 		<!-- 아래코드는 화면크기 고정 및 설정하는 META태그 //-->
 		<meta name="viewport" content="user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, width=device-width" />
-		<style>
-			body {
-				-webkit-text-size-adjust: 100%;
-				-moz-text-size-adjust: 100%;
-				-ms-text-size-adjust: 100%;
-			}
-			#cont {font-size:10pt; text-align:justify; text-indent:5pt;line-height:120%; margin:1pt;}
-			#cont2 {font-size:10pt; text-align:justify; text-indent:-16px;line-height:120%; margin-left:15pt;}
-			#cont3 {font-size:5pt; text-align:center;}
-			#cont4 {font-size:5pt; text-indent:-10px; margin-left:10pt;}}
-			#sub_title {font-size:12pt;}
-			#m_title {font-size:20pt;margin-left:10pt;}
-			.m_win {background-color:#A5A588;}
-		</style>
+		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <script>
-            function onSubmit() {
-                $.ajax({
-                    url: "https://script.google.com/macros/s/AKfycby1pamGj8rJuN3vybP14R5uCYpis1f89JDJXeT-1aO1b46TlF8/exec",
-                    data:{"const":"a", "return":"b", "return_email":document.getElementsByName("return_email").value},
-                    type: "POST",
-                    success: moveDIV(2)
-                });
-            }
-            
-		    function tTdWidth() {
-		        var cid1 = document.getElementById('td1');
-		        var cid2 = document.getElementById('td2');
-		        
-		        if(window.innerWidth > window.innerHeight) {
-		            cid1.width = '30%';
-				    cid2.width = '40%';
-		        }
-		        else {
-					cid1.width = '5%';
-					cid2.width = '90%';
-				}
-		    }
-            
-		    function imgSignWidth() {
-		        var imgid = document.getElementById('sign_img');
-		        if(window.innerWidth > window.innerHeight) {
-				    imgid.width = window.innerWidth * 0.25;
-		        }
-		        else {
-					imgid.width = window.innerWidth * 0.5;
-				}
-		    }
-		    
-		    function moveDIV(mode) {
-		        var tmp_div = document.getElementById("pre_div");
+        	if( navigator.userAgent.match(/Android/i)
+        	|| navigator.userAgent.match(/webOS/i)
+        	|| navigator.userAgent.match(/iPhone/i)
+        	|| navigator.userAgent.match(/iPad/i)
+        	|| navigator.userAgent.match(/iPod/i)
+        	|| navigator.userAgent.match(/BlackBerry/i)
+        	|| navigator.userAgent.match(/Windows Phone/i)) {
+        		document.write("<link rel='mobile.css'></link>");
+        	}
+        	
+        	else document.write("<link rel='non_mobile.css'></link>");
+        	
+        	function onSubmit() {
+        		$.ajax({
+        			url: "https://script.google.com/macros/s/AKfycby1pamGj8rJuN3vybP14R5uCYpis1f89JDJXeT-1aO1b46TlF8/exec",
+        			data:{"const":"a", "return":"b", "return_email":document.getElementsByName("return_email").value},
+        			type: "POST"
+        		});
+        	}
+        	
+        	function moveDIV(mode) {
+        		var tmp_div = document.getElementById("pre_div");
 		        switch (mode) {
-		            case 1 :
-		                tmp_div.innerHTML = document.getElementById('consent').innerHTML;
-		                break;
-		            case 2 :
-		                tmp_div.innerHTML = document.getElementById('psi').innerHTML;
-		                break;
-		            default : break;
+		        	case 1 :
+		        		tmp_div.innerHTML = document.getElementById('consent').innerHTML;
+		        		break;
+		        	case 2 :
+		        		tmp_div.innerHTML = document.getElementById('psi').innerHTML;
+		        		break;
+		        	default : break;
 		        }
-				scrollTo(0,1);
-		    }
-		    
-		    function make_disable(id) {
-		        document.getElementById(id).disabled = true;
-		    }
-		    function make_able(id) {
-		        document.getElementById(id).disabled = false;
-		    }
-		</script>
+		        scrollTo(0,1);
+        	}
+        	
+        	function make_disable(id) {
+        		document.getElementById(id).disabled = true;
+        	}
+        	
+        	function make_able(id) {
+        		document.getElementById(id).disabled = false;
+        	}
+        </script>
+	<style>
+		body {
+			-webkit-text-size-adjust: 100%;
+			-moz-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+		}
+		#cont {font-size:10pt; text-align:justify; text-indent:5pt;line-height:120%; margin:1pt;}
+		#cont2 {font-size:10pt; text-align:justify; text-indent:-16px;line-height:120%; margin-left:15pt;}
+		#cont3 {font-size:5pt; text-align:center;}
+		#cont4 {font-size:5pt; text-indent:-10px; margin-left:10pt;}
+		#sub_title {font-size:12pt;}
+		#m_title {font-size:20pt;margin-left:10pt;}
+	</style>
 	</head>
 	
     <body topmargin="0" bottommargin="0" rightmargin="0" leftmargin="0">
