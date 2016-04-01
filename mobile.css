@@ -13,9 +13,3 @@ body {
 
 #td1 {width:5%;}
 #td2 {width:90%;}
-
-#signimg {width:
-<script>
-document.write(window.innerWidth);
-</script>
-;}
