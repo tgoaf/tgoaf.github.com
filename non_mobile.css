@@ -1,1 +1,16 @@
+#cont {font-size:12pt; text-align:justify; text-indent:5pt;line-height:120%; margin:1pt;}
+#cont2 {font-size:12pt; text-align:justify; text-indent:-16px;line-height:120%; margin-left:15pt;}
+#cont3 {font-size:10pt; text-align:center;}
+#cont4 {font-size:10pt; text-indent:-10px; margin-left:10pt;}
+#sub_title {font-size:15pt;}
+#m_title {font-size:30pt;margin-left:10pt;}
+
+#td1 {width:30%;}
+#td2 {width:40%;}
+
+#signimg {width:
+<script>
+document.write(window.innerWidth);
+</script>
+;}
 
