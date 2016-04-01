@@ -1,0 +1,15 @@
+.a_btn{
+background:#393;
+color:white;
+width:100px;
+height:40px;
+display:inline-block;
+text-align:center;
+/*
+css에서는 객체안에서 수직정렬 속성이 없으므로
+수직정렬을 하기 위해서는
+줄간격을 높이와 동일하게 설정한다.
+!주의 : 한줄일 경우에만 가능함.
+*/
+line-height:40px;
+}
